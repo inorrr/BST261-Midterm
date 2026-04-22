@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BST 261 Mock Exam</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="exam-panel" aria-labelledby="app-title">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">BST 261</p>
+            <h1 id="app-title">Mock Exam</h1>
+          </div>
+          <div class="score-card" aria-live="polite">
+            <span id="progressText">0 / 15</span>
+            <strong id="scoreText">Not scored</strong>
+          </div>
+        </header>
+
+        <div class="controls" aria-label="Exam controls">
+          <button id="newExamBtn" type="button" class="primary">New Random 15</button>
+          <button id="submitBtn" type="button">Submit Exam</button>
+          <button id="reviewBtn" type="button">Review Missed</button>
+        </div>
+
+        <div id="status" class="status" role="status">Loading question bank...</div>
+        <form id="examForm" class="question-list" aria-label="Mock exam questions"></form>
+      </section>
+
+      <aside class="summary-panel" aria-labelledby="summary-title">
+        <h2 id="summary-title">Study Summary</h2>
+        <div id="summaryContent" class="summary-content">
+          Start a random exam, answer the questions, and submit to see concept-level feedback.
+        </div>
+      </aside>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
